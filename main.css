@@ -102,7 +102,6 @@ footer p {
   padding: 60px;
   margin: 45px auto;
   background: #fff;
-  line-height: 50px;
   display: none;
   position: relative; }
   .send-info:before {
@@ -116,6 +115,7 @@ footer p {
     width: 75%;
     height: 50px;
     font-size: 18px;
+    line-height: 50px;
     color: #1287bf;
     font-family: Helvetica;
     padding-left: 10px;
