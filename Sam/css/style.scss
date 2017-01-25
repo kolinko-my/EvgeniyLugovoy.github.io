@@ -1,0 +1,333 @@
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+// HEADER
+.header {
+	height: 42px;
+	background: #f0f2f4;
+	border: solid 1px #e2e2e2;
+	.header-contacts {
+		height: 100%;
+		line-height: 42px;
+		float: right;
+		margin-right: 140px;
+		.number {
+			float: left;
+			height: 100%;
+			padding-right: 15px; 
+			border-right: solid 1px #e2e2e2;
+			span:nth-child(1) {
+				font-size: 17px;
+				color: #424242;
+			}
+			span:nth-child(2) {
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				font-size: 15px;
+				font-weight: bold;
+				color: #424242;
+			}
+		}
+		.email {
+			height: 100%;
+			float: left;
+			padding: 0 15px;
+			span:nth-child(1) {
+				font-size: 17px;
+				color: #424242;		
+			}
+			span:nth-child(2) {
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				font-size: 15px;
+				font-weight: bold;
+				color: #424242;
+			}
+		}
+		.social {
+			float: left;
+		}
+	}
+}
+
+//LOGO AND MAIN MENU
+.main-nav-wrapper {
+	height: 130px;
+// LOGO
+	.logo-wrapper {
+		height: 100%;
+		width: 40%;
+		float: left;
+		padding-left: 14%;
+    	padding-top: 40px;
+		.logo {
+			display: block;
+			float: left;
+			height: 100%;
+			margin-right: 7px;
+		}
+		.brand-name {
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-size: 37px;
+			font-weight: bold;
+			color: #424242;
+			width: 256px;
+    		display: block;
+    		height: 52px;
+    		margin: -10px;
+		}
+		.brand-tagline {
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-size: 15px;
+			color: #424242;
+		}
+	}
+	
+// NAVIGATION
+	.nav-wrapper {
+		height: 100%;
+		width: 60%;
+		float: right;
+		padding-top: 55px;
+		padding-left: 60px;
+		.navigation {
+			display: block;
+			height: 100%;
+			float: left;
+			li {
+				float: left;
+				padding: 0 20px;
+				position: relative;
+				&:after {
+					content: '';
+					display: block;
+					width: 5px;
+					height: 5px;
+					border-radius: 100%;
+					background: #424242;
+					position: absolute;
+					top: 9px;
+					right: -2px;
+				}
+				&:last-child:after {
+					display: none;
+				}
+				a {
+					text-decoration: none;
+					color: #424242;
+					font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+					font-size: 15px;
+					font-weight: bold;
+					&:hover {
+						color: #de2b24;
+					}
+				}
+			}
+		}
+		.main-consult-button {
+			display: block;
+			outline: none;
+			border: none;
+			width: 170px;
+			height: 36px;
+			background: #de2b24;
+			color: #fff;
+			font-size: 15px;
+			font-weight: bold;
+			border-radius: 5px;
+			margin-top: -7px;
+			transition: 0.2s;
+			&:hover {
+				background: #e73730;
+			}
+		}
+	}
+// FLOAT CLEAR
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+//BANNER
+.banner-wrapper {
+	height: 590px;
+	background: url('../images/banner-bg.jpg');
+	background-size: cover;
+	text-align: center;
+	padding: 180px 7px 7px;
+	span:nth-of-type(1) {
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 48px;
+		font-weight: bold;
+		color: #fff;
+	}
+	span:nth-of-type(2) {
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 27px;
+		color: #fff;
+	}
+	.banner-consult-button {
+		display: block;
+		outline: none;
+		border: none;
+		width: 330px;
+		height: 69px;
+		background: #f8cd53;
+		color: #fff;
+		font-size: 23px;
+		font-weight: bold;
+		border-radius: 5px;
+		margin: 40px auto 0;
+		transition: 0.2s;
+		&:hover {
+			background: #f8db53;
+		}
+	}
+}
+
+.about-us-wrapper {
+	min-height: 542px;
+	padding: 90px 15px 20px;
+	text-align: center;
+	>span:nth-of-type(1) {
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 36px;
+		font-weight: bold;
+		color: #424242;
+	}
+	>span:nth-of-type(2) {
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 19px;
+		color: #424242;
+		display: block;
+		width: 283px;
+    	margin: 0 auto 100px;
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			width: 47px;
+			height: 5px;
+			background: #424242;
+			position: absolute;
+			top: 36px;
+			left: 118px;
+		}
+	}
+	.services {
+		height: 200px;
+		.service-desc {
+			height: 100%;
+			text-align: center;
+			.service-image {
+				margin-bottom: 20px;
+			}
+			>span:nth-of-type(1) {
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				font-size: 19px;
+				font-weight: bold;
+			}
+			>span:nth-of-type(2) {
+				font-family: OpenSansRegular;
+				font-size: 13px;
+				display: block;
+				width: 228px;
+				margin: 0 auto;
+			} 
+		}
+	}
+}
+
+@media screen and (max-width: 1115px) {
+	.main-nav-wrapper {
+		.logo-wrapper {
+			width: 25% !important;
+			padding-left: 2% !important;
+		}
+		.nav-wrapper {
+			width: 75% !important;
+		}
+	}
+}
+
+@media screen and (max-width: 890px) {
+	.header-contacts {
+		width: 308px !important;
+		float: none !important;
+		margin: 0 auto !important;
+	}
+
+	.main-nav-wrapper {
+		height: 260px !important;
+		.logo-wrapper {
+			float: none !important;
+			padding-left: 0 !important;
+			width: 244px !important;
+			margin: 0 auto !important;
+			height: 130px !important;
+		}
+		.nav-wrapper {
+			float: none !important;
+			height: 130px !important;
+			width: 100% !important;
+			padding: 0 !important;
+			.navigation {
+				float: none !important;
+				width: 427px !important;
+				margin: 0 auto !important;
+				height: 60px;
+			}
+			.main-consult-button {
+				margin-top: 0 !important;
+				margin: 0 auto !important;
+			}
+
+		}
+	}
+}
+
+@media screen and (max-width: 427px) {
+	.main-nav-wrapper {
+		.nav-wrapper {
+			padding-top: 15px !important; 
+			.navigation {
+				width: 132px !important;
+				float: left !important;
+				height: 100% !important;
+				li {
+					float: none !important;
+					&:last-child:after {
+						display: block;
+					}
+				}
+			}
+			.main-consult-button {
+				width: 150px !important;
+				margin: 25px auto 0 !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.banner-consult-button {
+		width: 300px !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.about-us-wrapper {
+		>span:nth-of-type(2) {
+    		margin: 0 auto 70px !important;
+		}
+		.services {
+			>div {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

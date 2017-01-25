@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+.header {
+  height: 42px;
+  background: #f0f2f4;
+  border: solid 1px #e2e2e2; }
+  .header .header-contacts {
+    height: 100%;
+    line-height: 42px;
+    float: right;
+    margin-right: 140px; }
+    .header .header-contacts .number {
+      float: left;
+      height: 100%;
+      padding-right: 15px;
+      border-right: solid 1px #e2e2e2; }
+      .header .header-contacts .number span:nth-child(1) {
+        font-size: 17px;
+        color: #424242; }
+      .header .header-contacts .number span:nth-child(2) {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: #424242; }
+    .header .header-contacts .email {
+      height: 100%;
+      float: left;
+      padding: 0 15px; }
+      .header .header-contacts .email span:nth-child(1) {
+        font-size: 17px;
+        color: #424242; }
+      .header .header-contacts .email span:nth-child(2) {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: #424242; }
+    .header .header-contacts .social {
+      float: left; }
+
+.main-nav-wrapper {
+  height: 130px; }
+  .main-nav-wrapper .logo-wrapper {
+    height: 100%;
+    width: 40%;
+    float: left;
+    padding-left: 14%;
+    padding-top: 40px; }
+    .main-nav-wrapper .logo-wrapper .logo {
+      display: block;
+      float: left;
+      height: 100%;
+      margin-right: 7px; }
+    .main-nav-wrapper .logo-wrapper .brand-name {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 37px;
+      font-weight: bold;
+      color: #424242;
+      width: 256px;
+      display: block;
+      height: 52px;
+      margin: -10px; }
+    .main-nav-wrapper .logo-wrapper .brand-tagline {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      color: #424242; }
+  .main-nav-wrapper .nav-wrapper {
+    height: 100%;
+    width: 60%;
+    float: right;
+    padding-top: 55px;
+    padding-left: 60px; }
+    .main-nav-wrapper .nav-wrapper .navigation {
+      display: block;
+      height: 100%;
+      float: left; }
+      .main-nav-wrapper .nav-wrapper .navigation li {
+        float: left;
+        padding: 0 20px;
+        position: relative; }
+        .main-nav-wrapper .nav-wrapper .navigation li:after {
+          content: '';
+          display: block;
+          width: 5px;
+          height: 5px;
+          border-radius: 100%;
+          background: #424242;
+          position: absolute;
+          top: 9px;
+          right: -2px; }
+        .main-nav-wrapper .nav-wrapper .navigation li:last-child:after {
+          display: none; }
+        .main-nav-wrapper .nav-wrapper .navigation li a {
+          text-decoration: none;
+          color: #424242;
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          font-size: 15px;
+          font-weight: bold; }
+          .main-nav-wrapper .nav-wrapper .navigation li a:hover {
+            color: #de2b24; }
+    .main-nav-wrapper .nav-wrapper .main-consult-button {
+      display: block;
+      outline: none;
+      border: none;
+      width: 170px;
+      height: 36px;
+      background: #de2b24;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: -7px;
+      -webkit-transition: 0.2s;
+              transition: 0.2s; }
+      .main-nav-wrapper .nav-wrapper .main-consult-button:hover {
+        background: #e73730; }
+  .main-nav-wrapper:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.banner-wrapper {
+  height: 590px;
+  background: url("../images/banner-bg.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 180px 7px 7px; }
+  .banner-wrapper span:nth-of-type(1) {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff; }
+  .banner-wrapper span:nth-of-type(2) {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 27px;
+    color: #fff; }
+  .banner-wrapper .banner-consult-button {
+    display: block;
+    outline: none;
+    border: none;
+    width: 330px;
+    height: 69px;
+    background: #f8cd53;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 40px auto 0;
+    -webkit-transition: 0.2s;
+            transition: 0.2s; }
+    .banner-wrapper .banner-consult-button:hover {
+      background: #f8db53; }
+
+.about-us-wrapper {
+  min-height: 542px;
+  padding: 90px 15px 20px;
+  text-align: center; }
+  .about-us-wrapper > span:nth-of-type(1) {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #424242; }
+  .about-us-wrapper > span:nth-of-type(2) {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    color: #424242;
+    display: block;
+    width: 283px;
+    margin: 0 auto 100px;
+    position: relative; }
+    .about-us-wrapper > span:nth-of-type(2):after {
+      content: '';
+      display: block;
+      width: 47px;
+      height: 5px;
+      background: #424242;
+      position: absolute;
+      top: 36px;
+      left: 118px; }
+  .about-us-wrapper .services {
+    height: 200px; }
+    .about-us-wrapper .services .service-desc {
+      height: 100%;
+      text-align: center; }
+      .about-us-wrapper .services .service-desc .service-image {
+        margin-bottom: 20px; }
+      .about-us-wrapper .services .service-desc > span:nth-of-type(1) {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 19px;
+        font-weight: bold; }
+      .about-us-wrapper .services .service-desc > span:nth-of-type(2) {
+        font-family: OpenSansRegular;
+        font-size: 13px;
+        display: block;
+        width: 228px;
+        margin: 0 auto; }
+
+@media screen and (max-width: 1115px) {
+  .main-nav-wrapper .logo-wrapper {
+    width: 25% !important;
+    padding-left: 2% !important; }
+  .main-nav-wrapper .nav-wrapper {
+    width: 75% !important; } }
+@media screen and (max-width: 890px) {
+  .header-contacts {
+    width: 308px !important;
+    float: none !important;
+    margin: 0 auto !important; }
+
+  .main-nav-wrapper {
+    height: 260px !important; }
+    .main-nav-wrapper .logo-wrapper {
+      float: none !important;
+      padding-left: 0 !important;
+      width: 244px !important;
+      margin: 0 auto !important;
+      height: 130px !important; }
+    .main-nav-wrapper .nav-wrapper {
+      float: none !important;
+      height: 130px !important;
+      width: 100% !important;
+      padding: 0 !important; }
+      .main-nav-wrapper .nav-wrapper .navigation {
+        float: none !important;
+        width: 427px !important;
+        margin: 0 auto !important;
+        height: 60px; }
+      .main-nav-wrapper .nav-wrapper .main-consult-button {
+        margin-top: 0 !important;
+        margin: 0 auto !important; } }
+@media screen and (max-width: 427px) {
+  .main-nav-wrapper .nav-wrapper {
+    padding-top: 15px !important; }
+    .main-nav-wrapper .nav-wrapper .navigation {
+      width: 132px !important;
+      float: left !important;
+      height: 100% !important; }
+      .main-nav-wrapper .nav-wrapper .navigation li {
+        float: none !important; }
+        .main-nav-wrapper .nav-wrapper .navigation li:last-child:after {
+          display: block; }
+    .main-nav-wrapper .nav-wrapper .main-consult-button {
+      width: 150px !important;
+      margin: 25px auto 0 !important; } }
+@media screen and (max-width: 360px) {
+  .banner-consult-button {
+    width: 300px !important; } }
+@media screen and (max-width: 767px) {
+  .about-us-wrapper > span:nth-of-type(2) {
+    margin: 0 auto 70px !important; }
+  .about-us-wrapper .services > div {
+    margin-bottom: 10px; } }
+
+/*# sourceMappingURL=style.css.map */
